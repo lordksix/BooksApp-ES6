@@ -10,8 +10,14 @@ const bookDivName = 'book-row';
 const navItem = document.querySelectorAll('.nav a');
 const section = document.querySelectorAll('section');
 
+// Instatiate BookBiding Class
 const bookBinding = new BBClass.BookBinding(localStorageName);
 
+/**
+ * Function to change visibility of section depending of navlink selected.
+ * @param {NodeList} section List of Node of sections of webpage
+ * @returns {void}
+ */
 const sectionRender = (section) => {
   const { hash } = window.location;
   if (hash.length > 1) {
@@ -26,11 +32,16 @@ const sectionRender = (section) => {
   }
 };
 
+/**
+ * Function to render lasted array of books
+ * @returns {void}
+ */
 const spaLoad = () => {
   BBClass.BookBinding.update(bookshelf, localStorageName, bookDivName);
   sectionRender(section);
 };
 
+// remove book from localstorage, dom and bookbinding instance
 bookshelf.addEventListener('click', (e) => {
   if (e.target.classList.contains('removeBtn')) {
     const index = parseInt(e.target.dataset.index, 10);
@@ -41,6 +52,7 @@ bookshelf.addEventListener('click', (e) => {
   }
 });
 
+// Select section to show
 navItem.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
@@ -50,9 +62,11 @@ navItem.forEach((link) => {
   });
 });
 
+// add book to localstorage, dom and bookbinding instance
 add.addEventListener('click', (e) => {
   e.preventDefault();
   bookBinding.add(title, author, bookshelf, bookDivName);
 });
 
+// render lasted array of books
 window.addEventListener('load', spaLoad);
