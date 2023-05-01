@@ -30,7 +30,7 @@
 
 # 📖 [Books Apps ES6] <a name="about-project"></a>
 
-**Books App ES6** is a project to highlight the use of wireframes.
+**Books App ES6** is a project to highlight the use of wireframes, ESM and webpack.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
