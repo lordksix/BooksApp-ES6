@@ -135,6 +135,9 @@ nav {
 
 .time {
   text-align: right;
+  margin-block-start: 5px;
+  margin-inline-end: 20px;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 400px) {
