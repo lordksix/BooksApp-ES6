@@ -133,6 +133,10 @@ nav {
   list-style-type: circle;
 }
 
+.time {
+  text-align: right;
+}
+
 @media screen and (min-width: 400px) {
   .book-row {
     display: grid;

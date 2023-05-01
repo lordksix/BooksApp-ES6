@@ -1,4 +1,5 @@
-import BBClass from './modules/BookBinding.js';
+// import { DateTime } from 'luxon';
+import BBClass from '../modules/BookBinding.js';
 
 const add = document.getElementById('add');
 const title = document.getElementById('title');
@@ -10,6 +11,7 @@ const bookDivName = 'book-row';
 const navItem = document.querySelectorAll('.nav a');
 const section = document.querySelectorAll('section');
 
+const timeP = document.querySelector('.time');
 // Instatiate BookBiding Class
 const bookBinding = new BBClass.BookBinding(localStorageName);
 
@@ -39,6 +41,7 @@ const sectionRender = (section) => {
 const spaLoad = () => {
   BBClass.BookBinding.update(bookshelf, localStorageName, bookDivName);
   sectionRender(section);
+  // timeP.textContent = DateTime.now();
 };
 
 // remove book from localstorage, dom and bookbinding instance
