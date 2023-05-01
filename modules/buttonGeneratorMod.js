@@ -1,6 +1,6 @@
 import addClass from './elementAddClassMod.js';
 
-const createButton = (func, classes, ariaLabel, textContent = null, href = null) => {
+const createButton = (func, classes, ariaLabel, textContent = false, href = false) => {
   const button = document.createElement('button');
   button.type = func;
   button.ariaLabel = ariaLabel;

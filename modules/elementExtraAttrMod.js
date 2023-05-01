@@ -1,5 +1,5 @@
 const addAttributes = (elem,
-  data = null, index = null, innerChild = null) => {
+  data = false, index = 0, innerChild = null) => {
   if (data) elem.setAttribute(`data-${data}`, index);
   if (innerChild) elem.appendChild(innerChild);
   return elem;

@@ -8,9 +8,8 @@ const createBookDiv = (title, author, index, classes) => {
   bookDiv.append(bookPara);
   const removeBtn = btnGen.createButton('button', 'removeBtn', 'Remove Book', 'Remove');
   extraAtt.addAttributes(removeBtn, 'index', `${index}`);
-  const div = document.createElement('div');
-  extraAtt.addAttributes(bookDiv, null, 'book', `${index}`, removeBtn);
-  return div;
+  extraAtt.addAttributes(bookDiv, 'book', `${index}`, removeBtn);
+  return bookDiv;
 };
 
 class Book {
