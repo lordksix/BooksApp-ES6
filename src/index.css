@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  padding: 10px;
+}
+
+section {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  padding-block: 30px;
+  flex-grow: 1;
+  justify-items: center;
+}
+
+#bookSection {
+  display: flex;
+}
+
+.div {
+  margin-top: 30px;
+}
+
+h1,
+h2 {
+  margin-block: 10px;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.bookshelf {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid black;
+  justify-items: center;
+  height: auto;
+}
+
+.book-row {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-block: 10px;
+  padding-inline: 20px;
+  gap: 10px;
+  text-align: center;
+}
+
+.book-row:nth-child(odd) {
+  background-color: gainsboro;
+}
+
+.addbook {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  max-width: 450px;
+  align-items: center;
+}
+
+.addbook input {
+  width: 70vw;
+  max-width: 250px;
+}
+
+button {
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+
+.addbook button {
+  display: flex;
+  align-self: end;
+}
+
+label {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  align-items: center;
+}
+
+.extremity {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border: 2px solid black;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 240px;
+  margin-block: auto;
+}
+
+.removeBtn {
+  box-shadow: 0 0 4px 4px black;
+}
+
+.active {
+  color: black;
+  font-weight: bold;
+}
+
+#contactSection ul {
+  padding-inline-start: 30px;
+}
+
+#contactSection li {
+  list-style-type: circle;
+}
+
+.time {
+  text-align: right;
+  margin-block-start: 5px;
+  margin-inline-end: 20px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 400px) {
+  .book-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-items: center;
+    padding: 10px;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  .book-row p {
+    justify-self: start;
+  }
+
+  nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
