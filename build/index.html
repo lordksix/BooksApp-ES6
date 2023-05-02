@@ -1,1 +1,60 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book Shelf</title><script defer="defer" src="runtime.bundle.js"></script><script defer="defer" src="index.bundle.js"></script></head><body><header><nav class="extremity"><a href=""><h1>Awesome Books</h1></a><ul class="nav"><li><a href="bookSection" class="active">List</a></li><li>|</li><li><a href="formSection">Add book</a></li><li>|</li><li><a href="contactSection">Contact</a></li></ul></nav><p class="time">gfnfxgn</p></header><section id="bookSection"><h2>All Awesome books</h2><div class="bookshelf"></div></section><section id="formSection"><h2>Add a new book</h2><form action="post" class="addbook div"><div class="title-book"><label for="title">Title</label> <input name="title" id="title" placeholder="Title" required></div><div class="author-book"><label for="author">Author</label> <input name="author" id="author" placeholder="Author" required></div><button id="add" type="submit">Add</button></form></section><section id="contactSection"><h2>Contact information</h2><div class="div"><p>Do have any questions or you just want to say "Hello"?</p><p>You can reach out to us!</p><ul><li>Our e-mail: mail@mail.com</li><li>Our phone number: 0043586534422</li><li>Our address: Streetname 22,84503 City, Country</li></ul></div></section><footer class="extremity"><p>Copyright</p></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Shelf</title>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
+<body>
+  <header>
+    <nav class="extremity">
+      <a href=""><h1>Awesome Books</h1></a>
+      <ul class="nav">
+        <li><a href="bookSection" class="active">List</a></li>
+        <li>|</li>
+        <li><a href="formSection">Add book</a></li>
+        <li>|</li>
+        <li><a href="contactSection">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="time">gfnfxgn</p>
+  </header>
+
+  <section id="bookSection">
+    <h2>All Awesome books</h2>
+    <div class="bookshelf">
+    </div>
+  </section>
+
+  <section id="formSection">
+    <h2>Add a new book</h2>
+    <form action="post" class="addbook div">
+      <div class="title-book">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" placeholder="Title" required>
+      </div>
+      <div class="author-book">
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" placeholder="Author" required>
+      </div>
+      <button id="add" type="submit">Add</button>
+    </form>
+  </section>
+  <section id="contactSection">
+    <h2>Contact information</h2>
+    <div class="div">
+      <p>Do have any questions or you just want to say "Hello"? </p>
+      <p>You can reach out to us!</p>
+      <ul>
+          <li>Our e-mail: mail@mail.com</li>
+          <li>Our phone number: 0043586534422</li>
+          <li>Our address: Streetname 22,84503 City, Country</li>
+      </ul>
+  </div>
+  </section>
+  <footer class="extremity">
+    <p>Copyright</p>
+  </footer>
+</body>
+</html>
