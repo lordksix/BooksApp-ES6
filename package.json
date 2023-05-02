@@ -7,21 +7,24 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lordksix/BooksApp-ES6.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "https://github.com/lordksix/",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lordksix/BooksApp-ES6/issues"
   },
   "homepage": "https://github.com/lordksix/BooksApp-ES6#readme",
   "devDependencies": {
+    "@babel/core": "^7.21.5",
+    "@babel/preset-env": "^7.21.5",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",

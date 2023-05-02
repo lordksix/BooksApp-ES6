@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Book App Development ',
-      template: './src/index.html',
+      template: path.resolve(__dirname, 'src', 'index.html'),
     }),
   ],
   output: {
